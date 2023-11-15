@@ -3,3 +3,5 @@ playwright-stealth
 stem
 PySocks
 bs4
+Pillow
+pytesseract
