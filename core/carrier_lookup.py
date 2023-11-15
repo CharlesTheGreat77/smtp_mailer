@@ -10,7 +10,7 @@ def get_carrier_from_carrierlookup(phone_number):
         rand_device = random.choice(list(devices.keys()))
         print(f'[*] Using device: {rand_device}')
         device = p.devices[rand_device]
-        browser = p.webkit.launch(headless=False)
+        browser = p.webkit.launch()
         context = browser.new_context(**device,)
         page = context.new_page()
         page.goto('https://currentcarrierlookup.com')
