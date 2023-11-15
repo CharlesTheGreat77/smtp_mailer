@@ -1,7 +1,7 @@
 import os
 from core.smtp_server import get_config, send_message
 from core.tor_setup import start_tor_proxy
-from core.carrier_lookup import get_carrier_from_spydialer
+from core.carrier_lookup import get_carrier_from_carrierlookup
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from argparse import ArgumentParser
@@ -24,10 +24,9 @@ def main(target, option, from_address, subject, message_body, amount):
     if server != False:
         # if target is a phone #, get carrier and set it as <phone_number>@<sms_gateway>
         if option == 1:
-            sms_gateway = get_carrier_from_spydialer(target)
+            sms_gateway = get_carrier_from_carrierlookup(target)
             phone_number = target.split('-')
             target = ''.join(phone_number) + sms_gateway
-
         if from_address == None:
             from_address = smtp_email
 
