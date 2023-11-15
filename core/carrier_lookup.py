@@ -25,7 +25,6 @@ def get_carrier_from_carrierlookup(phone_number):
         enchancer = ImageEnhance.Contrast(img)
         img = enchancer.enhance(2)
         img.convert('1')
-        img.save('temp.png')
         captcha_text = pytesseract.image_to_string(img, config='--oem 3 --psm 11 outputbase aplphanumeric')
         page.fill('#tn-tel', phone_number)
         page.wait_for_timeout(random.randint(1500,3000))
