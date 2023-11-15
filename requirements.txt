@@ -1,5 +1,4 @@
 pytest-playwright
-playwright-stealth
 stem
 PySocks
 bs4
