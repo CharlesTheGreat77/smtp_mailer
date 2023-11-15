@@ -64,6 +64,3 @@ optional arguments:
                         amount to send
 ```
 
-# Notes
-Uses tor's default settings to connect to smtp server and spydialer to get phone numbers carrier
-
