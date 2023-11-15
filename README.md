@@ -4,7 +4,8 @@ Send/Spam text messages with smtplib using python3
 # Prerequisites
 ```
 python3
-tor
+apt/brew install tor
+apt/brew install tesseract
 ```
 
 ```
