@@ -8,6 +8,11 @@ apt/brew install tor
 apt/brew install tesseract
 ```
 
+# Note
+tesseract must be installed if sending/spaming messages
+to phone number, as we use such to bypass a captcha for 
+a carrier lookup.
+
 ```
 ==========================================
 | ,dP""8a "888888b,  d8b    "888b  ,888" |
