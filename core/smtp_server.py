@@ -34,6 +34,6 @@ def smtp_login(smtp_server, smtp_port, smtp_username, smtp_password):
 def send_message(server, sender_email, target, message, amount):
     for x in range(0, amount):
         print(f'[*] Sending message to {target}..')
-        server.sendmail(sender_email, target, message.as_string())
+        server.sendmail(sender_email, target, message)
     print("[!] Email(s) sent successfully!\n")
     server.quit()
