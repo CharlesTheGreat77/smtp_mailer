@@ -8,8 +8,6 @@ def compose_message(target, from_address, subject, message_body):
     # can spoof the from to whatever, but gmail may mark as spam..
     return f'From: {from_address}\nTo: {target}\nSubject: {subject}\n{message_body}'.encode()
 
-    return message
-
 def main(target, option, from_address, subject, message_body, amount):
     # establish tor connection
     tor_process = start_tor_proxy()
