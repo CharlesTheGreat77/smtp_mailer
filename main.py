@@ -7,12 +7,8 @@ from email.mime.text import MIMEText
 from argparse import ArgumentParser
 
 def compose_message(target, from_address, subject, message_body):
-    message = MIMEMultipart()
     # can spoof the from to whatever, but gmail may mark as spam..
-    message["From"] = from_address
-    message["To"] = target
-    message["Subject"] = subject
-    message.attach(MIMEText(message_body, "plain"))
+    return f'From: {from_address}\nTo: {target}\nSubject: {subject}\n{message_body}'.encode()
 
     return message
 
