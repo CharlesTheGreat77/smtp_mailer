@@ -2,8 +2,6 @@ import os
 from core.smtp_server import get_config, send_message
 from core.tor_setup import start_tor_proxy
 from core.carrier_lookup import get_carrier_from_carrierlookup
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from argparse import ArgumentParser
 
 def compose_message(target, from_address, subject, message_body):
