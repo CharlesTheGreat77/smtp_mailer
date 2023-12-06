@@ -38,7 +38,7 @@ def main(target, option, from_address, subject, message_body, amount):
 if __name__=='__main__':
     parser = ArgumentParser(description='Spoofing Emails/MMS with SMTPLIB')
     parser.add_argument('-e', '--email', help='target email address', required=False, type=str, default=None)
-    parser.add_argument('-p', '--phone', help='target phone number [777-999-2222]', required=False, type=str, default=None)
+    parser.add_argument('-p', '--phone', help='target phone number', required=False, type=str, default=None)
     parser.add_argument('-f', '--from_address', help='from address [optional]', required=False, default=None, type=str)
     parser.add_argument('-s', '--subject', help='subject of the message', required=False, type=str)
     parser.add_argument('-b', '--body', help='body of the message', required=True, type=str)
