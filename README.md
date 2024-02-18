@@ -59,7 +59,7 @@ optional arguments:
   -e EMAIL, --email EMAIL
                         target email address
   -p PHONE, --phone PHONE
-                        target phone number [777-999-2222]
+                        target phone number [7779992222]
   -f FROM_ADDRESS, --from_address FROM_ADDRESS
                         from address [optional]
   -s SUBJECT, --subject SUBJECT
